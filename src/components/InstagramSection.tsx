@@ -1,15 +1,18 @@
 import { Instagram, ExternalLink } from 'lucide-react';
 
 const InstagramSection = () => {
-  // Placeholder posts - In a real app, these would come from Instagram API
+  // Recent posts preview images representing the restaurant's content
   const instagramPosts = [
-    "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1603073163308-9654c3fb70b5?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=300&h=300&fit=crop",
   ];
+
+  const instagramHandle = "tasteofchinalovers";
+  const instagramUrl = `https://www.instagram.com/${instagramHandle}`;
 
   return (
     <section className="py-20 relative overflow-hidden">
@@ -34,7 +37,7 @@ const InstagramSection = () => {
           {instagramPosts.map((post, index) => (
             <a
               key={index}
-              href="https://www.instagram.com/testofchina.in"
+              href={instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative aspect-square overflow-hidden rounded-lg"
@@ -54,13 +57,13 @@ const InstagramSection = () => {
         {/* Follow Button */}
         <div className="text-center">
           <a
-            href="https://www.instagram.com/testofchina.in"
+            href={instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 btn-primary-glow"
           >
             <Instagram className="w-5 h-5" />
-            Follow @testofchina.in
+            Follow @{instagramHandle}
             <ExternalLink className="w-4 h-4" />
           </a>
         </div>

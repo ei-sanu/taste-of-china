@@ -188,7 +188,7 @@ const Contact = () => {
 
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/testofchina.in"
+                href="https://www.instagram.com/tasteofchinalovers"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card p-5 flex items-center gap-4 card-hover block"
@@ -198,7 +198,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Follow us on Instagram</h3>
-                  <p className="text-sm text-secondary">@testofchina.in</p>
+                  <p className="text-sm text-secondary">@tasteofchinalovers</p>
                 </div>
               </a>
             </div>
