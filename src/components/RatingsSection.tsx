@@ -37,8 +37,8 @@ const RatingsSection = () => {
         <section className="py-12 relative bg-gradient-to-b from-background/50 to-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-8">
-                    <h3 className="font-decorative text-2xl md:text-3xl text-foreground mb-2">
-                        Trusted by <span className="tech-text-gradient">Thousands</span>
+                    <h3 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2">
+                        Trusted by <span className="text-secondary">Thousands</span>
                     </h3>
                     <p className="text-muted-foreground" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif' }}>
                         See what people are saying about us across platforms

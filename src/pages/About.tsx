@@ -1,4 +1,4 @@
-import { Award, Users, ChefHat, Heart } from 'lucide-react';
+import { Award, ChefHat, Heart, Users } from 'lucide-react';
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="section-title text-foreground mb-6 fade-in-up">
-              Our <span className="text-primary glow-text-red">Story</span>
+              Our <span className="text-secondary">Story</span>
             </h1>
             <p className="text-xl text-muted-foreground fade-in-up" style={{ animationDelay: '0.2s' }}>
               A journey of passion, tradition, and culinary excellence since 2010
@@ -31,20 +31,20 @@ const About = () => {
                 Where <span className="text-secondary">Tradition</span> Meets Innovation
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Taste of China was born from a simple yet profound vision: to bring the authentic 
-                flavors of Chinese cuisine to Bhubaneswar while creating a dining experience 
+                Taste of China was born from a simple yet profound vision: to bring the authentic
+                flavors of Chinese cuisine to Bhubaneswar while creating a dining experience
                 that transcends the ordinary.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Founded in 2010, we started as a small family restaurant with big dreams. 
-                Our founder, inspired by the rich culinary traditions of China and the 
-                vibrant street food culture of Kolkata, set out to create dishes that 
+                Founded in 2010, we started as a small family restaurant with big dreams.
+                Our founder, inspired by the rich culinary traditions of China and the
+                vibrant street food culture of Kolkata, set out to create dishes that
                 would resonate with both traditionalists and modern food enthusiasts.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Today, with multiple outlets across Bhubaneswar, we continue to honor 
-                our commitment to quality, authenticity, and innovation. Every dish 
-                that leaves our kitchen carries the legacy of generations and the 
+                Today, with multiple outlets across Bhubaneswar, we continue to honor
+                our commitment to quality, authenticity, and innovation. Every dish
+                that leaves our kitchen carries the legacy of generations and the
                 passion of our dedicated team.
               </p>
             </div>

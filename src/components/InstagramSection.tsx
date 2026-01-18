@@ -117,8 +117,8 @@ const InstagramSection = () => {
         <div className={`text-center mb-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <div className="flex items-center justify-center gap-2 mb-4">
             <Instagram className="w-6 h-6 text-primary" />
-            <h2 className="font-decorative text-3xl md:text-5xl tech-text-gradient">
-              Follow Our Journey
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
+              Follow Our <span className="text-secondary">Journey</span>
             </h2>
             <Instagram className="w-6 h-6 text-primary" />
           </div>
