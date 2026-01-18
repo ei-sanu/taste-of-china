@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { ChevronRight, Home, Info, Phone, Settings, UtensilsCrossed } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Info, UtensilsCrossed, Phone } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,11 +27,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-        isScrolled
-          ? 'bg-background/90 backdrop-blur-xl shadow-lg border-b border-primary/20'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${isScrolled
+        ? 'bg-background/90 backdrop-blur-xl shadow-lg border-b border-primary/20'
+        : 'bg-transparent'
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -40,11 +39,11 @@ const Header = () => {
             <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/30">
               <span className="text-2xl font-display font-bold text-primary-foreground">T</span>
             </div>
-            <div className="hidden sm:block">
+            <div>
               <h1 className="font-display text-xl font-bold text-foreground group-hover:text-secondary transition-colors">
                 Taste of China
               </h1>
-              <p className="text-xs text-muted-foreground">Authentic Chinese Cuisine</p>
+              <p className="text-xs text-muted-foreground">Since 2010</p>
             </div>
           </Link>
 
@@ -54,9 +53,8 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`nav-link flex items-center gap-2 font-medium ${
-                  isActive(link.path) ? 'active' : ''
-                }`}
+                className={`nav-link flex items-center gap-2 font-medium ${isActive(link.path) ? 'active' : ''
+                  }`}
               >
                 <link.icon className="w-4 h-4" />
                 {link.label}
@@ -75,31 +73,41 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground hover:text-secondary transition-colors"
-          >
-            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            {/* Arrow Indicator */}
+            <div className={`transition-all duration-500 ${isMobileMenuOpen ? 'opacity-0 -translate-x-2' : 'opacity-100 animate-pulse'}`}>
+              <ChevronRight className="w-4 h-4 text-secondary" />
+            </div>
+
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="relative p-2.5 transition-all duration-300 hover:scale-105"
+              aria-label="Toggle menu"
+            >
+              {/* Settings Icon with Rotation Animation */}
+              <Settings
+                className={`w-6 h-6 text-secondary transition-transform duration-500 ${isMobileMenuOpen ? 'rotate-180' : 'rotate-0'
+                  }`}
+              />
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-500 ${
-            isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`md:hidden overflow-hidden transition-all duration-500 ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
-          <nav className="py-4 space-y-2">
+          <nav className="py-4 space-y-2 bg-background/95 backdrop-blur-xl rounded-lg">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 ${
-                  isActive(link.path)
-                    ? 'bg-primary/20 text-secondary'
-                    : 'text-foreground hover:bg-muted'
-                }`}
+                className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 ${isActive(link.path)
+                  ? 'bg-primary/10 text-secondary border-l-2 border-secondary'
+                  : 'text-foreground hover:bg-primary/5'
+                  }`}
               >
                 <link.icon className="w-5 h-5" />
                 {link.label}
