@@ -1,4 +1,5 @@
-import { Star } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { MessageSquare, Star } from 'lucide-react';
 
 const platforms = [
     {
@@ -33,6 +34,20 @@ const platforms = [
 ];
 
 const RatingsSection = () => {
+    const handleReviewClick = () => {
+        // Open Google review page in a popup window
+        const width = 600;
+        const height = 700;
+        const left = (window.innerWidth - width) / 2;
+        const top = (window.innerHeight - height) / 2;
+
+        window.open(
+            'https://share.google/cj7QYBQn1PBD8TDaT',
+            'GoogleReview',
+            `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`
+        );
+    };
+
     return (
         <section className="py-12 relative bg-gradient-to-b from-background/50 to-background">
             <div className="container mx-auto px-4">
@@ -40,9 +55,19 @@ const RatingsSection = () => {
                     <h3 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2">
                         Trusted by <span className="text-secondary">Thousands</span>
                     </h3>
-                    <p className="text-muted-foreground" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif' }}>
+                    <p className="text-muted-foreground mb-4" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif' }}>
                         See what people are saying about us across platforms
                     </p>
+
+                    {/* Submit Review Button */}
+                    <Button
+                        onClick={handleReviewClick}
+                        className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                        size="lg"
+                    >
+                        <MessageSquare className="w-5 h-5 mr-2" />
+                        Submit a Review on Google
+                    </Button>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">

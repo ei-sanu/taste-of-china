@@ -17,7 +17,7 @@ const LocationSection = () => {
           {/* Map */}
           <div className="glass-card overflow-hidden h-[400px] lg:h-auto">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.458891961427!2d85.82841731491646!3d20.296459986405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7a5c3929b33%3A0x5c2cdd83f8e1e3c!2s142%2C%20Water%20Tank%20Ln%2C%20Bapuji%20Nagar%2C%20Bhubaneswar%2C%20Odisha%20751009!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.9982264292207!2d85.83461251034372!3d20.25890831369707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a747916a0581%3A0xfae38e7766fdfbab!2sTaste%20of%20China!5e0!3m2!1sen!2sin!4v1768746439209!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '400px' }}
