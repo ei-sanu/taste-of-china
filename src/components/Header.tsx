@@ -43,7 +43,7 @@ const Header = () => {
               <h1 className="font-display text-xl font-bold text-foreground group-hover:text-secondary transition-colors">
                 Taste of China
               </h1>
-              <p className="text-xs text-muted-foreground">Since 2010</p>
+              <p className="text-xs text-muted-foreground">Since 2012</p>
             </div>
           </Link>
 

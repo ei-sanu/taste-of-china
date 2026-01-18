@@ -16,7 +16,7 @@ const About = () => {
               Our <span className="text-secondary">Story</span>
             </h1>
             <p className="text-xl text-muted-foreground fade-in-up" style={{ animationDelay: '0.2s' }}>
-              A journey of passion, tradition, and culinary excellence since 2010
+              A journey of passion, tradition, and culinary excellence since 2012
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ const About = () => {
                 that transcends the ordinary.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Founded in 2010, we started as a small family restaurant with big dreams.
+                Founded in 2012, we started as a small family restaurant with big dreams.
                 Our founder, inspired by the rich culinary traditions of China and the
                 vibrant street food culture of Kolkata, set out to create dishes that
                 would resonate with both traditionalists and modern food enthusiasts.

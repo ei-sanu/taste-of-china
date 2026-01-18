@@ -7,28 +7,28 @@ const featuredDishes = [
     description: "Crispy chicken tossed in spicy dragon sauce with bell peppers",
     price: "₹299",
     isVeg: false,
-    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&h=300&fit=crop"
   },
   {
     name: "Taste of China Special",
     description: "Our signature fried rice with mix proteins - Egg, Chicken & Prawn",
     price: "₹282",
     isVeg: false,
-    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop"
   },
   {
     name: "Veg Hakka Noodles",
     description: "Stir-fried noodles with fresh vegetables in soy sauce",
     price: "₹176",
     isVeg: true,
-    image: "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop"
   },
   {
     name: "Veg Steamed Momos",
     description: "6 Pieces - Freshly steamed dumplings filled with vegetables",
     price: "₹153",
     isVeg: true,
-    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=400&h=300&fit=crop"
   }
 ];
 

@@ -26,7 +26,7 @@ const Footer = () => {
                 <h2 className="font-display text-xl font-bold text-white">
                   Taste of China
                 </h2>
-                <p className="text-secondary font-medium text-xs tracking-wider">Since 2010</p>
+                <p className="text-secondary font-medium text-xs tracking-wider">Since 2012</p>
               </div>
             </Link>
 
@@ -111,7 +111,7 @@ const Footer = () => {
                   <h2 className="font-display text-2xl font-bold text-white mb-1">
                     Taste of China
                   </h2>
-                  <p className="text-secondary font-medium text-sm tracking-wider">Since 2010</p>
+                  <p className="text-secondary font-medium text-sm tracking-wider">Since 2012</p>
                 </div>
               </Link>
               <p className="text-gray-400 text-sm leading-relaxed">
