@@ -1,7 +1,19 @@
+import { getBusinessHoursStatus } from '@/lib/businessHours';
 import { Clock, Facebook, Home, Info, Instagram, Mail, MapPin, Menu, Phone, Twitter } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const [hoursStatus, setHoursStatus] = useState(getBusinessHoursStatus());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHoursStatus(getBusinessHoursStatus());
+    }, 60000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <footer className="relative overflow-hidden bg-gradient-to-b from-zinc-950 to-black">
       {/* Red Top Divider */}
@@ -83,7 +95,10 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-2 text-gray-400 justify-center">
               <Clock size={16} className="text-primary shrink-0" />
-              <span className="text-xs text-gray-300">12:00 PM - 10:30 PM</span>
+              <div className="flex flex-col items-start">
+                <span className="text-xs text-gray-300">12:00 PM - 10:30 PM</span>
+                <span className={`text-xs font-medium ${hoursStatus.statusColor}`}>{hoursStatus.statusText}</span>
+              </div>
             </div>
           </div>
 

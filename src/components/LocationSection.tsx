@@ -1,6 +1,18 @@
+import { getBusinessHoursStatus } from '@/lib/businessHours';
 import { Clock, MapPin, Phone } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const LocationSection = () => {
+  const [hoursStatus, setHoursStatus] = useState(getBusinessHoursStatus());
+
+  useEffect(() => {
+    // Update status every minute
+    const interval = setInterval(() => {
+      setHoursStatus(getBusinessHoursStatus());
+    }, 60000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="py-20 relative">
       <div className="container mx-auto px-4">
@@ -67,8 +79,8 @@ const LocationSection = () => {
                       <span className="text-muted-foreground">Every Day</span>
                       <span className="text-foreground font-medium">12:00 PM - 10:30 PM</span>
                     </div>
-                    <div className="mt-2 text-xs text-green-600 font-medium">
-                      Open now
+                    <div className={`mt-2 text-xs font-medium ${hoursStatus.statusColor}`}>
+                      {hoursStatus.statusText}
                     </div>
                   </div>
                 </div>

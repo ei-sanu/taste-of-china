@@ -4,11 +4,13 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { getBusinessHoursStatus } from '@/lib/businessHours';
 import { CheckCircle2, Clock, Download, Instagram, Mail, MapPin, Phone, RefreshCw, Send, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const Contact = () => {
   const { toast } = useToast();
+  const [hoursStatus, setHoursStatus] = useState(getBusinessHoursStatus());
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,6 +35,14 @@ const Contact = () => {
     setCaptchaAnswer('');
     setCaptchaValid(null);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHoursStatus(getBusinessHoursStatus());
+    }, 60000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     generateCaptcha();
@@ -677,7 +687,7 @@ const Contact = () => {
                       <h3 className="font-semibold text-foreground mb-1">Hours</h3>
                       <p className="text-sm text-muted-foreground">
                         Every Day: 12PM - 10:30PM<br />
-                        <span className="text-green-600 font-medium">Open now</span>
+                        <span className={`font-medium ${hoursStatus.statusColor}`}>{hoursStatus.statusText}</span>
                       </p>
                     </div>
                   </div>
