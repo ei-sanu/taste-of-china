@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Noto+Sans:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -76,10 +76,15 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Orbitron', sans-serif;
   }
 }
@@ -179,6 +184,7 @@
     0% {
       transform: translateX(0);
     }
+
     100% {
       transform: translateX(-50%);
     }
@@ -193,9 +199,12 @@
   }
 
   @keyframes pulse-glow {
-    0%, 100% {
+
+    0%,
+    100% {
       filter: drop-shadow(0 0 20px hsl(var(--crimson-glow)));
     }
+
     50% {
       filter: drop-shadow(0 0 40px hsl(var(--gold-glow)));
     }
@@ -211,6 +220,7 @@
       opacity: 0;
       transform: translateY(30px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -227,6 +237,7 @@
       opacity: 0;
       transform: translateX(-50px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);
@@ -243,6 +254,7 @@
       opacity: 0;
       transform: translateX(50px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);
@@ -259,6 +271,7 @@
       opacity: 0;
       transform: scale(0.9);
     }
+
     to {
       opacity: 1;
       transform: scale(1);
@@ -270,21 +283,22 @@
   }
 
   @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-20px);
     }
   }
 
   .shimmer {
-    background: linear-gradient(
-      90deg,
-      hsl(var(--gold) / 0) 0%,
-      hsl(var(--gold) / 0.3) 50%,
-      hsl(var(--gold) / 0) 100%
-    );
+    background: linear-gradient(90deg,
+        hsl(var(--gold) / 0) 0%,
+        hsl(var(--gold) / 0.3) 50%,
+        hsl(var(--gold) / 0) 100%);
     background-size: 200% 100%;
     animation: shimmer 2s infinite;
   }
@@ -293,6 +307,7 @@
     0% {
       background-position: -200% 0;
     }
+
     100% {
       background-position: 200% 0;
     }

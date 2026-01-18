@@ -1,9 +1,10 @@
-import HeroSection from '@/components/HeroSection';
 import FeaturedDishes from '@/components/FeaturedDishes';
-import ReviewsMarquee from '@/components/ReviewsMarquee';
-import OrderSection from '@/components/OrderSection';
-import LocationSection from '@/components/LocationSection';
+import HeroSection from '@/components/HeroSection';
 import InstagramSection from '@/components/InstagramSection';
+import LocationSection from '@/components/LocationSection';
+import OrderSection from '@/components/OrderSection';
+import RatingsSection from '@/components/RatingsSection';
+import ReviewsMarquee from '@/components/ReviewsMarquee';
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       <HeroSection />
       <FeaturedDishes />
       <ReviewsMarquee />
+      <RatingsSection />
       <OrderSection />
       <InstagramSection />
       <LocationSection />

@@ -12,7 +12,7 @@ const HeroSection = () => {
       </div>
 
       {/* Grid Pattern Overlay */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `
@@ -35,7 +35,7 @@ const HeroSection = () => {
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 fade-in-up" style={{ animationDelay: '0.2s' }}>
             <span className="text-foreground">Taste of</span>
             <br />
-            <span className="text-primary glow-text-red">China</span>
+            <span className="text-secondary">CHINA</span>
           </h1>
 
           {/* Tagline */}
@@ -44,7 +44,7 @@ const HeroSection = () => {
           </p>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 fade-in-up" style={{ animationDelay: '0.5s' }}>
-            Experience the authentic flavors of Chinese cuisine in a futuristic ambiance. 
+            Experience the authentic flavors of Chinese cuisine in a futuristic ambiance.
             Every dish tells a story of heritage, crafted with passion and precision.
           </p>
 
@@ -74,13 +74,6 @@ const HeroSection = () => {
               <div className="text-sm text-muted-foreground">Rating</div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 fade-in-up" style={{ animationDelay: '1s' }}>
-        <div className="w-6 h-10 border-2 border-muted-foreground/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-secondary rounded-full animate-bounce" />
         </div>
       </div>
     </section>

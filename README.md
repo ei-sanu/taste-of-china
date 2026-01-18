@@ -1,18 +1,10 @@
-# Welcome to your Lovable project
+# Taste of Tomorrow
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+A modern restaurant website built with React, TypeScript, and Tailwind CSS.
 
 ## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
@@ -62,12 +54,9 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+You can deploy this project to various platforms:
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **Vercel**: Connect your GitHub repository and deploy automatically
+- **Netlify**: Use their CLI or connect your repository
+- **GitHub Pages**: Build and deploy using GitHub Actions
+- **Any static hosting service**: Run `npm run build` and deploy the `dist` folder

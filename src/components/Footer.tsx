@@ -1,5 +1,5 @@
+import { Clock, Facebook, Instagram, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-muted-foreground leading-relaxed">
-              Experience the authentic flavors of Chinese cuisine in a futuristic ambiance. 
+              Experience the authentic flavors of Chinese cuisine in a futuristic ambiance.
               Where tradition meets innovation.
             </p>
             <div className="flex gap-4">
@@ -81,14 +81,14 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <p className="text-muted-foreground text-sm">
-                  142, Water Tank Ln, Bapuji Nagar,<br />
+                  142, Near Water Tank Lane, Bapuji Nagar,<br />
                   Bhubaneswar, Odisha 751009
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <a href="tel:+919876543210" className="text-muted-foreground hover:text-secondary transition-colors">
-                  +91 98765 43210
+                <a href="tel:+916746550550" className="text-muted-foreground hover:text-secondary transition-colors">
+                  +91 6746 550 550
                 </a>
               </div>
               <div className="flex items-center gap-3">

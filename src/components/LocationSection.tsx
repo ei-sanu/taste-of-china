@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone } from 'lucide-react';
+import { Clock, MapPin, Phone } from 'lucide-react';
 
 const LocationSection = () => {
   return (
@@ -39,7 +39,7 @@ const LocationSection = () => {
                 <div>
                   <h3 className="font-display text-xl font-bold text-foreground mb-2">Our Address</h3>
                   <p className="text-muted-foreground">
-                    142, Water Tank Ln, Bapuji Nagar,<br />
+                    142, Near Water Tank Lane, Bapuji Nagar,<br />
                     Bhubaneswar, Odisha 751009
                   </p>
                   <a
@@ -64,12 +64,11 @@ const LocationSection = () => {
                   <h3 className="font-display text-xl font-bold text-foreground mb-2">Opening Hours</h3>
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
-                      <span className="text-muted-foreground">Monday - Friday</span>
-                      <span className="text-foreground font-medium">11:00 AM - 10:00 PM</span>
+                      <span className="text-muted-foreground">Every Day</span>
+                      <span className="text-foreground font-medium">12:00 PM - 10:30 PM</span>
                     </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-muted-foreground">Saturday - Sunday</span>
-                      <span className="text-foreground font-medium">11:00 AM - 11:00 PM</span>
+                    <div className="mt-2 text-xs text-green-600 font-medium">
+                      Open now
                     </div>
                   </div>
                 </div>
@@ -86,10 +85,10 @@ const LocationSection = () => {
                   <h3 className="font-display text-xl font-bold text-foreground mb-2">Reservations</h3>
                   <p className="text-muted-foreground mb-2">Call us to book your table</p>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+916746550550"
                     className="text-xl font-display font-bold text-secondary hover:text-secondary/80 transition-colors"
                   >
-                    +91 98765 43210
+                    +91 6746 550 550
                   </a>
                 </div>
               </div>

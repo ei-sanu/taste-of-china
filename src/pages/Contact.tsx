@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { Clock, Instagram, Mail, MapPin, Phone, Send } from 'lucide-react';
+import { useState } from 'react';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -131,7 +131,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Address</h3>
                       <p className="text-sm text-muted-foreground">
-                        142, Water Tank Ln,<br />
+                        142, Near Water Tank Lane,<br />
                         Bapuji Nagar, Bhubaneswar,<br />
                         Odisha 751009
                       </p>
@@ -147,8 +147,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                      <a href="tel:+919876543210" className="text-sm text-secondary hover:text-secondary/80 transition-colors">
-                        +91 98765 43210
+                      <a href="tel:+916746550550" className="text-sm text-secondary hover:text-secondary/80 transition-colors">
+                        +91 6746 550 550
                       </a>
                     </div>
                   </div>
@@ -178,8 +178,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Hours</h3>
                       <p className="text-sm text-muted-foreground">
-                        Mon-Fri: 11AM - 10PM<br />
-                        Sat-Sun: 11AM - 11PM
+                        Every Day: 12PM - 10:30PM<br />
+                        <span className="text-green-600 font-medium">Open now</span>
                       </p>
                     </div>
                   </div>

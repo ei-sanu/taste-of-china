@@ -15,7 +15,8 @@ export default {
     extend: {
       fontFamily: {
         display: ['Orbitron', 'sans-serif'],
-        body: ['Noto Sans', 'sans-serif'],
+        body: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
