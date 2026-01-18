@@ -5,30 +5,30 @@ const featuredDishes = [
   {
     name: "Dragon Chicken",
     description: "Crispy chicken tossed in spicy dragon sauce with bell peppers",
-    price: "₹350",
+    price: "₹299",
     isVeg: false,
-    image: "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&h=300&fit=crop"
   },
   {
-    name: "Hakka Noodles",
-    description: "Stir-fried noodles with vegetables in soy sauce",
-    price: "₹220",
-    isVeg: true,
-    image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop"
-  },
-  {
-    name: "Kung Pao Prawns",
-    description: "Succulent prawns with peanuts in kung pao sauce",
-    price: "₹450",
+    name: "Taste of China Special",
+    description: "Our signature fried rice with mix proteins - Egg, Chicken & Prawn",
+    price: "₹282",
     isVeg: false,
-    image: "https://images.unsplash.com/photo-1603073163308-9654c3fb70b5?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop"
   },
   {
-    name: "Manchow Soup",
-    description: "Classic Indo-Chinese soup with crispy noodles",
-    price: "₹180",
+    name: "Veg Hakka Noodles",
+    description: "Stir-fried noodles with fresh vegetables in soy sauce",
+    price: "₹176",
     isVeg: true,
-    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400&h=300&fit=crop"
+  },
+  {
+    name: "Veg Steamed Momos",
+    description: "6 Pieces - Freshly steamed dumplings filled with vegetables",
+    price: "₹153",
+    isVeg: true,
+    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop"
   }
 ];
 
@@ -60,12 +60,12 @@ const FeaturedDishes = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
-                
+
                 {/* Veg/Non-veg Mark */}
                 <div className="absolute top-3 left-3">
                   <div className={dish.isVeg ? 'veg-mark' : 'non-veg-mark'} />
                 </div>
-                
+
                 {/* Price Tag */}
                 <div className="absolute top-3 right-3 px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-bold">
                   {dish.price}

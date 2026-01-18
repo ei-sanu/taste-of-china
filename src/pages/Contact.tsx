@@ -56,11 +56,11 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm text-muted-foreground mb-2">Your Name</label>
+                    <label className="block text-sm text-muted-foreground mb-2">Name</label>
                     <Input
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="John Doe"
+                      placeholder="Your Name"
                       required
                       className="bg-background/50 border-border focus:border-secondary"
                     />
@@ -81,7 +81,7 @@ const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="john@example.com"
+                    placeholder="youremail@example.com"
                     required
                     className="bg-background/50 border-border focus:border-secondary"
                   />
