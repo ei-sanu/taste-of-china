@@ -25,7 +25,7 @@ const NotFound = () => {
           Page Not Found
         </h2>
         <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-          Oops! The page you're looking for seems to have wandered off. 
+          Oops! The page you're looking for seems to have wandered off.
           Let's get you back to our delicious menu!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -33,7 +33,7 @@ const NotFound = () => {
             <Home className="w-5 h-5" />
             Back to Home
           </Link>
-          <button 
+          <button
             onClick={() => window.history.back()}
             className="btn-gold-glow flex items-center justify-center gap-2"
           >
@@ -47,3 +47,4 @@ const NotFound = () => {
 };
 
 export default NotFound;
+//made for client
